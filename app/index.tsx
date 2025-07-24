@@ -11,9 +11,9 @@ const App = () => {
 					Hola seba
 				</Text>
 
-				<Text className="text-blue-500 text-4xl font-work-black">Hola seba</Text>
-				<Text className="text-green-500 text-3xl font-work-light">Hola seba</Text>
-				<Text className="text-violet-500 text-2xl font-work-medium">Hola seba</Text>
+				<Text className="text-primary text-4xl font-work-black">Hola seba</Text>
+				<Text className="text-secondary text-3xl font-work-light">Hola seba</Text>
+				<Text className="text-tertiary text-2xl font-work-medium">Hola seba</Text>
 				<Text className="text-xl">Hola seba</Text>
 			</View>
 		</SafeAreaView>
