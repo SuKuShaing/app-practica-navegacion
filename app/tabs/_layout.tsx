@@ -4,12 +4,15 @@ import React from "react";
 
 const TabsLayout = () => {
 	return (
-		<Tabs screenOptions={{ tabBarActiveTintColor: "green" }}>
-            {/* tabBarShowLabel: false, para que no se muestre el label de la tab */}
+		<Tabs
+			screenOptions={{ tabBarActiveTintColor: "indigo", headerShown: false }}
+			>
+			{/* headerShown, para que no se muestre el header puesto que usamos el del tabs */}
+			{/* screenOptions, desde ahí se se puede configurar el tabBar */}
+			{/* tabBarShowLabel: false, para que no se muestre el label de la tab */}
 			<Tabs.Screen
 				name="(stack)"
 				options={{
-
 					title: "stack",
 					tabBarIcon: ({ color }) => (
 						<Ionicons size={28} name="person-outline" color={color} />
@@ -19,7 +22,6 @@ const TabsLayout = () => {
 			<Tabs.Screen
 				name="home/index"
 				options={{
-
 					title: "Home",
 					tabBarIcon: ({ color }) => (
 						<Ionicons size={28} name="home" color={color} />
