@@ -10,7 +10,7 @@ const HomeScreen = () => {
 				<CustomButton
 					className="mb-2"
 					color="primary"
-					onPress={() => router.push("/productos")}
+					onPress={() => router.push("/tabs/(stack)/productos")}
 				>
 					Productos
 				</CustomButton>
@@ -18,7 +18,7 @@ const HomeScreen = () => {
 				<CustomButton
 					className="mb-2"
 					color="secondary"
-					onPress={() => router.push("/profile")}
+					onPress={() => router.push("/tabs/(stack)/profile")}
 				>
 					Perfil
 				</CustomButton>
@@ -26,12 +26,12 @@ const HomeScreen = () => {
 				<CustomButton
 					className="mb-2"
 					color="tertiary"
-					onPress={() => router.push("/settings")}
+					onPress={() => router.push("/tabs/(stack)/settings")}
 				>
 					Configuración
 				</CustomButton>
 
-				<Link href="/productos" asChild>
+				<Link href="/tabs/(stack)/productos" asChild>
 					{/* La prop asChild le dice al componente Link que no renderice su propio elemento DOM/componente, hace que el CustomButton herede la funcionalidad de navegación del Link padre. */}
 					<CustomButton variant="text-only" color="secondary">
 						Productos

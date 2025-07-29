@@ -6,7 +6,7 @@ const StackLayout = () => {
 		<Stack
 			screenOptions={
 				{
-					// headerShown: false
+					headerShown: true, // para que no se muestre el header puesto que usamos el del tabs
 					//  headerStyle: {
 					// 	backgroundColor: "blue",
 					//  },
