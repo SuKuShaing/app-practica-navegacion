@@ -1,7 +1,8 @@
 import { Redirect } from "expo-router";
 
 const App = () => {
-	return <Redirect href="/(stack)/home" />; // esto redirige a la ruta /productos
+	// return <Redirect href="/(stack)/home" />; // esto redirige a la ruta /productos
+	return <Redirect href="/tabs/" />; // esto redirige a la ruta /productos
 
 	// return (
 	// 	<SafeAreaView>
