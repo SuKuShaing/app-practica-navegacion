@@ -8,8 +8,8 @@ const DrawerLayout = () => {
 		<Drawer
 			drawerContent={CustomDrawer} // por defecto se envían todos los Drawer.Screen en las props
 			screenOptions={{
-				// headerShown: false,
-				overlayColor: "rgba(0, 0, 0, 0.4)", // color de fondo del overlay
+				headerShown: false,
+				overlayColor: "rgba(0, 0, 0, 0.5)", // color de fondo del overlay
 				// drawerActiveBackgroundColor: "rgba(0, 0, 0, 0.4)", // colocor de fondo del drawer activo
 				drawerActiveTintColor: "indigo", // color de texto del drawer activo
 				drawerInactiveTintColor: "black", // color de texto del drawer inactivo
@@ -23,6 +23,16 @@ const DrawerLayout = () => {
 				},
 			}}
 		>
+			<Drawer.Screen
+				name="tabs" // This is the name of the page and must match the url from root
+				options={{
+					drawerLabel: "Tabs + Stack",
+					title: "Tabs + Stack",
+					drawerIcon: ({ color, size }) => (
+						<Ionicons name="albums-outline" color={color} size={size} />
+					),
+				}}
+			/>
 			<Drawer.Screen
 				name="user/index" // This is the name of the page and must match the url from root
 				options={{

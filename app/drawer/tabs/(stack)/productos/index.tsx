@@ -17,7 +17,7 @@ const ProductsScreen = () => {
 						<View className="flex flex-row justify-between mt-2">
 							<Text className="font-work-black">{item.price}</Text>
 							<Link href={{
-								pathname: '/tabs/(stack)/productos/[id]',
+								pathname: '/drawer/tabs/(stack)/productos/[id]',
 								params: { id: item.id }
 							}} className="text-primary">Ver más</Link>
 						</View>

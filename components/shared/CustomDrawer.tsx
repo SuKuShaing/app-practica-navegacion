@@ -17,7 +17,6 @@ const CustomDrawer = (props: DrawerContentComponentProps) => {      // Aquí le 
 
 			{/* para que se vea el contenido del drawer */}
 			<DrawerItemList {...props} />
-			<Text className="text-2xl font-bold">SS</Text>
 		</DrawerContentScrollView>
 	);
 };
