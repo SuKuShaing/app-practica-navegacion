@@ -1,3 +1,4 @@
+import CustomDrawer from "@/components/shared/CustomDrawer";
 import { Ionicons } from "@expo/vector-icons";
 import { Drawer } from "expo-router/drawer";
 import React from "react";
@@ -5,6 +6,7 @@ import React from "react";
 const DrawerLayout = () => {
 	return (
 		<Drawer
+			drawerContent={CustomDrawer} // por defecto se envían todos los Drawer.Screen en las props
 			screenOptions={{
 				// headerShown: false,
 				overlayColor: "rgba(0, 0, 0, 0.4)", // color de fondo del overlay
