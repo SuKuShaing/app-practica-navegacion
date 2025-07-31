@@ -5,7 +5,10 @@ import React from "react";
 const TabsLayout = () => {
 	return (
 		<Tabs
-			screenOptions={{ tabBarActiveTintColor: "indigo", headerShown: false }}
+			screenOptions={{ 
+				tabBarActiveTintColor: "indigo", 
+				// headerShown: false 
+			}}
 			>
 			{/* headerShown, para que no se muestre el header puesto que usamos el del tabs */}
 			{/* screenOptions, desde ahí se se puede configurar el tabBar */}
@@ -14,6 +17,7 @@ const TabsLayout = () => {
 				name="(stack)"
 				options={{
 					title: "stack",
+					headerShown: false,
 					tabBarIcon: ({ color }) => (
 						<Ionicons size={28} name="person-outline" color={color} />
 					),
