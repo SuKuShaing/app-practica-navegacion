@@ -3,7 +3,8 @@ import { Redirect } from "expo-router";
 const App = () => {
 	// return <Redirect href="/(stack)/home" />; // esto redirige a la ruta /productos
 	// return <Redirect href="/tabs/" />; // esto redirige a tabs y tabs carga el home
-	return <Redirect href="/drawer/" />; // esto redirige a tabs y tabs carga el home
+	// return <Redirect href="/drawer/" />; // esto redirige a tabs y tabs carga el home
+	return <Redirect href="/home" />; // esto redirige a tabs y tabs carga el home
 
 	// return (
 	// 	<SafeAreaView>
