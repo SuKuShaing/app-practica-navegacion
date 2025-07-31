@@ -8,7 +8,7 @@ const DrawerLayout = () => {
 		<Drawer
 			drawerContent={CustomDrawer} // por defecto se envían todos los Drawer.Screen en las props
 			screenOptions={{
-				headerShown: false,
+				// headerShown: false, // lo desactivamos para que en algunas pantallas se muestren y en otras no
 				overlayColor: "rgba(0, 0, 0, 0.5)", // color de fondo del overlay
 				// drawerActiveBackgroundColor: "rgba(0, 0, 0, 0.4)", // colocor de fondo del drawer activo
 				drawerActiveTintColor: "indigo", // color de texto del drawer activo
@@ -28,6 +28,7 @@ const DrawerLayout = () => {
 				options={{
 					drawerLabel: "Tabs + Stack",
 					title: "Tabs + Stack",
+					headerShown: false, // para que no se muestre el header con menú puesto que usamos la navegación de tabs
 					drawerIcon: ({ color, size }) => (
 						<Ionicons name="albums-outline" color={color} size={size} />
 					),
