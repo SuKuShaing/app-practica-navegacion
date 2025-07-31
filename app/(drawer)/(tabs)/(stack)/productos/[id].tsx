@@ -16,7 +16,7 @@ const ProductsScreen = () => {
     // Actualizar el título de la pantalla dinámicamente según el producto
 	useEffect(() => {
 		if (product) {
-			navigation.setOptions({ title: product.title });
+			navigation.setOptions({ title: product?.title ?? "Producto" });
 		}
 	}, [product, navigation]);
 
